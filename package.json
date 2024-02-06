@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "natural": "^6.10.4",
+    "pdf-parse": "^1.1.1"
+  }
+}
