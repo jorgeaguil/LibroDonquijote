@@ -45,17 +45,19 @@ const contarPalabrasEnPDF = async () => {
 
     // Muestra las palabras más repetidas y su puntuación TF-IDF
     console.log('Palabras más repetidas y su puntuación TF-IDF:');
-    for (let i = 0; i < 50 && i < palabrasOrdenadas.length; i++) {
+    for (let i = 0; i < 7000 && i < palabrasOrdenadas.length; i++) {
       const palabra = palabrasOrdenadas[i];
       console.log(`${palabra}: ${recuentoPalabras[palabra]} veces, puntuación TF-IDF: ${tfidf.tfidf(palabra, 0)}`);
     }
 
+    /*
     // Muestra las palabras menos repetidas y su puntuación TF-IDF
     console.log('Palabras menos repetidas y su puntuación TF-IDF:');
     for (let i = palabrasOrdenadas.length - 1; i >= 0 && i >= palabrasOrdenadas.length - 50; i--) {
       const palabra = palabrasOrdenadas[i];
       console.log(`${palabra}: ${recuentoPalabras[palabra]} veces, puntuación TF-IDF: ${tfidf.tfidf(palabra, 0)}`);
     }
+    */
 
     // Muestra el total de palabras en el PDF
     const totalPalabras = palabras.length;
